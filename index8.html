@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jason and date ans dom</title>
+</head>
+<body>
+  <DIv class="button"></DIv>
+  <div id="button1"></div>
+      
+
+    <script>
+  /// below is JAON....
+
+  let product =  // its is object..
+  {
+    name: 'tshirt',
+    price:'670',
+    rating: {
+        stars:'4.5',
+        noOFreview:'456',
+    }
+  };
+  console.log(typeof product);
+  console.log( product);
+  let str = JSON.stringify(product); // to convert object into JSON
+  console.log(typeof str);
+  console.log(str);
+
+
+  let newProduct = JSON.parse(str);  // to convert JSON into object
+  
+  
+  console.log(typeof newProduct);
+  console.log(newProduct);
+
+
+  // below is local storages......
+
+
+  localStorage.setItem('name','rehan');
+  localStorage.setItem('price','466');
+  console.log(localStorage.getItem('name'));
+
+  let product1 =  // its is object..
+  {
+    name: 'tshirt',
+    price:'670',
+    rating: {
+        stars:'4.5',
+        noOFreview:'456',
+    }
+  };
+  localStorage.setItem('product1',JSON.stringify(product1));
+  console.log(localStorage.getItem('product1'));
+   let product2 = JSON.parse(localStorage.getItem('product1'));
+console.log(product2);
+   localStorage.removeItem('price');  // to remove item from localstorage..
+   //  localStorage.clear(); // to remove all item from localstorage..
+
+
+   // below is date object....
+  
+   let mydate = new Date();
+   console.log(mydate.getDate());
+   console.log(mydate.getDay());
+   console.log(mydate.getHours());
+
+   console.log(mydate.getFullYear());
+
+   console.log(mydate.getMonth());
+   console.log(mydate.getSeconds());
+
+
+   /// below is DOM and element properties....
+
+     
+    let letter= document.getElementById('button1');
+     button1.innerTEXT ='MY NAME IS REHAN';
+     document.getElementsByClassName('button');
+     button.innerTEXT ='MY NAME IS REHAN';
+
+      let button =document.createElement('button')
+     button.innerText ='click me';
+      document.querySelector('.button').appendChild(button);
+
+
+
+
+    </script>
+</body>
+</html>

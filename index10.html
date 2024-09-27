@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+   // exAMPLE OF WHILE loop....
+    let num =1;  // intialization
+      while(num<=10) // condition
+     {
+       console.log(num);
+       num = num+1;  // updating
+     }
+  
+
+    // exAMPLE OF WHILE loop....
+       
+    let array = [1,2,8,7,7,8,2,1];
+   
+
+     function palindron()
+     {
+
+        let number = array.length;
+
+        let start =0;
+        let end = number-1;
+     
+        while(start < end)
+        {
+
+        
+       if(array[start]!==array[end])
+       {
+         return -1;
+       }
+       else{
+          start ++;
+          end --;
+       }
+
+       return palindron;
+     }
+
+    }
+  console.log(palindron());
+
+
+
+
+   // exAMPLE OF do WHILE loop...
+   
+   let num1 =1;  // intialization
+      do // condition
+     {
+       console.log(num1);
+       num1 = num1+1;  // updating
+     }while(num1<=10)
+  
+   
+   // exAMPLE OF for loop...
+   
+ for( let num2 =0; num2<=10; num++)
+{
+    console.log(num2);
+
+}
+
+
+   let nums= [4,5,67,8,9,0]; // array with loop example
+   for( let i =0; i<=nums.length ; i++)
+   {
+    console.log(nums[i]);
+   }
+    
+
+   // acumulator pattern
+
+     let numss =[3,45,6,7,8,9] // sum of all number of array
+       let sum =0;
+     for( let i =0; i<=nums.length ; i++)
+     {
+      sum = sum+numss[i];
+     }
+     console.log(sum);
+
+     
+     let numsss =[3,5,6,7,8,9]  // squaraes of array 
+      let squares =[];
+      for( let i =0; i<=nums.length ; i++)
+      {
+        squares[i] = numsss[i]* numsss[i];
+      }
+
+      console.log(squares);  
+   
+   
+
+      // continue or break method....
+
+      for( let i =0; i<=50; i++)
+      {
+        console.log(i);  
+   
+        if( i==34)
+        {
+          break;
+        }
+      }
+
+
+      let arr =[3,5,6,7,8,9]  //example of break
+      for( let i =0; i<=nums.length ; i++)
+      {
+        if(arr[i]===8)
+        {  
+        console.log(`number found at indeex ${i}`);  
+        break;
+        }
+        console.log(`still looking`);  
+   
+      }
+
+      // example of continue
+
+      for( let i =0; i<=25 ; i++) // find odd number from 0 to 25
+      {
+        if(i%2==0)   // skip kar dega even number ko 
+        {
+          continue;
+        }
+        console.log(i);  // sare odd number print hoga
+   
+      }
+       
+
+      for( let i =0; i<=1000 ; i++) // find multiple of 3 from number  0 to 1000
+      {
+        if(i%3!=0)   // skip kar dega  number ko jo divisible nahi hai 3 se 
+        {
+          continue;
+        }
+        console.log(i);  // sare multiple of 3  number print hoga
+   
+      }
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise level 8 date and JSON</title>
+    <style>
+
+  #button{
+    height: 50px;
+    width: 50px;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+  }
+
+  .odd{
+    background-color: aquamarine;
+  }
+  .even{
+    background-color: blue;
+  }
+
+
+    </style>
+</head>
+<body>
+    
+   <h3 id="rehan1"></h3>
+   <button id="button"  onclick=" buttonpresssed();
+   
+   
+              ">0</button>
+
+    <script>
+
+  function dogreeting(personname = 'dear')
+  {  
+  let date = new Date();
+ let hours = date.getHours();
+// let hours = 15;
+  let heading = document.querySelector('#rehan1');
+
+  if(hours>5 &&hours<12)
+  {
+    heading.innerText =`goodmorning ${personname}`
+  }
+  else if(hours>12 &&hours<18)
+  {
+    heading.innerText =`goodevening ${personname}`
+  
+  }
+  else
+  {
+    heading.innerText =`good night ${personname}`
+ 
+  }
+
+  }
+  dogreeting('rehan');
+
+
+
+   let noTimeClick = localStorage.getItem('noTimeClick') || 0;
+  //let noTimeClick =0;
+  function buttonpresssed()
+  {
+    
+   // let button =document.querySelector('#button');
+    noTimeClick++;
+    localStorage.setItem('noTimeClick', noTimeClick);
+    buttonupdate();
+  }
+  
+    function buttonupdate()
+  {
+    let button =document.querySelector('#button');
+    
+    if(noTimeClick%2===0  )
+    {
+        button.classList.remove('odd');
+        button.classList.add('even');
+
+    }
+   else  {
+  
+        button.classList.remove('even');
+        button.classList.add('odd');
+    }
+    
+ 
+    button.innerText=noTimeClick;
+  }
+  
+  buttonupdate();
+
+
+    </script>
+</body>
+</html>

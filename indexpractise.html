@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise set level 4</title>
+    <style>
+    .click-me1{
+            color: brown;
+            background-color: blanchedalmond;
+            text-align: center;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+      .click-me{
+        color: black;
+        text-transform: uppercase;
+        background-color: aqua;
+        font-size: 15px;
+        border: 2px solid black;
+        border-radius: 4px;
+
+      }
+      
+    
+    </style>
+</head>
+<body>
+    <button class="click-me"   onclick= " cartQuantity=cartQuantity+1; document.querySelector('#cart-summary').
+    innerText = 'Your bag has' + cartQuantity + ' items';
+">add to  bag </button> 
+
+    <button class="click-me1"   onclick= " cartQuantity=cartQuantity-1; document.querySelector('#cart-summary').
+    innerText = 'Your bag has' + cartQuantity + ' items';" > move to wishlist </button> 
+     
+     <button class="click-me"  onclick= " cartQuantity=cartQuantity+2; document.querySelector('#cart-summary').
+     innerText = 'Your bag has' + cartQuantity + ' items';"  >add 1+1 sale man</button>
+     <h1 id="cart-summary"></h1>
+    
+
+    <script>
+// previous mistakes is here is dot as palce of ;  
+     let cartQuantity = 0;
+     document.querySelector('#cart-summary').
+     innerText = 'Your bag has   '+ cartQuantity + '  items';
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prctise level 11</title> 
+    <style>
+
+        .button{
+            height: 30px;
+            width: 80px;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+
+        }
+
+        .button1{  
+            height: 60px;
+            width: 160px;
+           
+            background-color: aquamarine;
+            font-size: 30px;
+        }
+    
+
+
+    </style>
+</head>
+<body> 
+    
+
+    <button class=" button " onclick="setTimeout(doublethesize,2000);">subscribe</button>
+    <br>
+    <br>
+     
+
+    <button class="button">subscribe</button>
+
+
+      <script>
+
+   /*  let multiply = num => num%2===0  // task 1
+    
+    
+      multiply(10);
+
+      let num = multiply(10);
+      console.log(num);  */
+     
+
+     /* let sum =  (num1,num2) =>num1 + num2; // 
+      
+
+      console.log(sum(3,4)); */
+
+
+      // task 3 creat a button that grow twice afer 2 sec.. important..
+      
+
+      /*    function doublethesize()
+      {
+      let buttonelement = document.querySelector('.button');
+      buttonelement.classList.add('.button1');
+      }  
+     
+
+
+      //task 3 by using event listesner...
+
+      let buttonelement = document.querySelector('.button');
+      buttonelement.addEventListener('click', event =>
+        {
+            setTimeout(doublethesize,2000);
+        }
+      );
+
+      */
+
+      // task 5 to creat a array sum by using foreach loop
+
+
+      let arr = [1,23,4,5,6,67,9]
+
+      let sum=0;
+      arr.forEach(num => sum = sum +num );
+      console.log(sum);
+
+
+      // task 6 square of aboue array...
+
+      let square =arr.map(num =>  num*num );
+    console.log(square);
+    
+      </script>
+</body>
+</html>

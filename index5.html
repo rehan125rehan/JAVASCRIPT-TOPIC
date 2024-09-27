@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 5 if else or boolean </title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+
+    <script>
+    console.log(5 > 4);//true
+
+    console.log(5 < 4);//false
+    console.log( typeof (5 > 4)); //boolean
+    console.log(5 == 4);//false
+    console.log(5 == 5);//true
+    console.log(5 === 4);//false
+    console.log(5 === 5);//true due to equlity and type 
+
+    console.log(5 == '5'); //true 
+    console.log(5 === '5'); //false due to equlity and  different type 
+    console.log(5+4 == 6+3);//true
+
+
+    // example of if and else
+  if(12>18)
+  {
+    console.log("you can drive")
+  }
+  else
+  {
+    console.log("you can  not drive")
+  }
+
+    
+    // example of if and else
+
+
+    let age = 21;
+    if(age>18)
+  {
+    console.log("you can drive car")
+  }
+  else if(age<18)
+  {
+    console.log("you can   drive motarcycle")
+  }
+
+   
+  else
+  {
+    console.log("you can  not drive")
+  }
+  
+
+
+    // example of if and else
+    let n = 4;
+    if(n%2==0)
+  {
+    console.log("its is a prime number")
+  }
+  else
+  {
+    console.log("is not a prime number")
+  }
+
+
+  // example of if and else
+  
+  let a = 5;
+  let b = 6;
+
+  let c = 8;
+  if(a>b>c)
+  {
+    console.log("a is greater number")
+  }
+  else if(b>a>c)
+  {
+    console.log("b is greater number")
+  }
+  else
+  {
+    console.log("c is greater number")
+  }
+//// logical operator is below......
+
+let age1 =25;
+if(age>12 && age <35)// and && used
+  {
+    console.log("you can drive car")
+  }
+  else
+  {
+    console.log("you can drive not car")
+  }
+
+
+  let age3 =25;
+if(age>12 || age >35)// or || used
+  {
+    console.log("you can drive car")
+  }
+  else
+  {
+    console.log("you can drive not car")
+  }
+
+  // scope example is below.......
+
+    let age4 =34;
+    let usermessage;// its block scope...
+    if(age>20)
+    {
+       usermessage ='you can drive';
+      console.log(usermessage);
+    }
+    else
+    {
+      usermessage ='you can not  drive';
+      console.log(usermessage);
+    }
+    console.log(usermessage);
+
+
+    // false or truely example is below...
+
+    let age5 =21;
+    if( age5)
+    {
+      console.log('you have a valid age');
+    }
+    else
+    {
+      console.log('you have a not valid age');
+    }
+
+    let age6 =null;//for null
+    if( age6)
+    {
+      console.log('you have a valid age');
+    }
+    else
+    {
+      console.log('you have a not valid age');
+    }
+
+   
+    let age7 =21/rehan;//for NoN not a number
+    if( age7)
+    {
+      console.log('you have a valid age');
+    }
+    else
+    {
+      console.log('you have a not valid age');
+    }
+
+ // below is if alternatives...
+
+
+   let num =31;
+   let result = num > 30 ? 'adult':'teenager';  //ternary opertor..
+   console.log(result);
+
+
+   let num1 =0;
+   let finalage = num1 || 18;  //guard operator //ans is 18
+   console.log(finalage);
+
+    
+
+   
+   let num2 =18;
+   let finalnum = num1 ?? 18;  //defult  operator //ans 0
+   console.log(finalnum);
+
+
+    
+    </script>
+</body>
+</html>

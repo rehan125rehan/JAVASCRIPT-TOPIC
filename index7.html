@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> object level 7</title>
+</head>
+<body>
+
+
+    <script>
+
+        // below is object syntax....
+
+        let user = {
+            name: 'rehan',
+            age: 23,
+            address: 'mandawa',
+        };
+        console.log(user);
+
+           // below is object accessing by using dot operator.. ....
+        console.log(user.name); 
+        console.log(user.age);
+        console.log(user.address);
+
+        user.name = 'noman'; // object value is change..
+        console.log(user.name); 
+
+        // below is object accessing by using bracket notation.. ....
+
+        console.log(user['name']); 
+        console.log(user['age']);
+        console.log(user['address']);
+
+        let propertyname = 'age';
+        
+        console.log(user[propertyname]); // ans is 23
+        console.log(user.propertyname); // ans is undefined...
+         // so we csn say that bracket notation is used to access by variable name....
+
+
+         // delete is used to delete the item in objecct..
+
+         delete user.age;
+         console.log(user); // delete address in object
+
+         // below is nested object example.....
+         let product ={
+            company :'mango',
+            price:'720',
+            rating : {
+          stars: '4.2',
+          numberOfReview:'56',
+            },
+
+            displayPrice : function()  // function assine...
+            {
+                console.log(`price of product is ${product.price}`)
+            }
+
+         };
+          product.displayPrice();
+
+           // below is AOTO BOXINNG ..........
+
+           console.log('my name is rehan'.length); /*ans is 16 here string convert into string object by
+           using auto boxing its access bt using dot operator */
+           console.log('my name is rehan'.lastIndexOf);  // other example of auto boxing
+
+           // below is object refrence .......
+
+           let a = 5;
+           let b = 6;
+           console.log(` a=${a}, b=${b}`);
+           b =8;
+           console.log(` a=${a}, b=${b}`);
+
+           let x ={
+           num :5,
+           };
+           let y =x;  // y refrence of x
+           console.log(` x=${x.num}, y=${y.num}`);
+           x.num = 8;
+           console.log(` x=${x.num}, y=${y.num}`); // y is reference of x
+
+     // below is object shortcuts....... 
+           let user = {
+            name: 'rehan',
+            age: 23,
+            address: 'mandawa',
+        };
+
+        let { name,age} = user;  // its is object de_structuring
+        console.log(name);
+        console.log(age);
+
+      let price = 673;
+        let product1 ={
+            company :'mango',
+            price   // shoerthand properties...
+        };
+        console.log(product.price); // ans is 673
+
+
+        let product2 ={
+            company :'mango',
+            price:'720',
+            rating : {
+          stars: '4.2',
+          numberOfReview:'56',
+            },
+
+            displayPrice ()  // function assine... // shoertand method object ....
+            {
+                console.log(`price of product is ${product.price}`)
+            }
+
+         };
+          product.displayPrice();
+
+</script>
+    
+</body>
+</html> 

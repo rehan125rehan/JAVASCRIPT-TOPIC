@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prcatise  level 7</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let product ={  // object
+           
+            company: 'myntra',
+             price: '230',
+             item: 'shirt',
+             timeatdelivery:`5pm`,
+
+             deliverTime:function()  // function assign
+
+             {
+               console.log(`delivery time is ${timeatdelivery}`);
+             }
+
+
+            };
+            console.log(product.item); // object assing bt dot operator
+            console.log(product.price);
+          // console.log(product.deliverTime());
+  
+            console.log(product['item']); // object assing bt bracket notation
+    
+             let {company,price} = product; // destructureing..
+
+             console.log(company);
+             console.log(price);
+
+
+             function isidententicalproduct( product1,product2)
+             {
+              if( typeof product1!== Object  || typeof product1!== Object )
+              {
+                
+                console.warn(`parameter passed was not a object`);
+                return false;
+              }
+              if(product1==product2)
+              {
+                return true;
+              }
+
+              if( product1.name === product2.name &&
+              product1.size === product2.size &&
+              product1.fit === product2.fit )    
+            {
+              return true;
+            }    
+          else
+        {
+          return false;
+        }   }
+      let product1 ={
+
+        name:'jaens',
+        size:'m',
+        fit:'slim fit',
+      };      
+      let product2 ={
+
+      name:'jaens',
+      size:'m',
+      fit:'slim fit',
+
+      };                           
+             
+
+      console.log(isidententicalproduct( product1,product2));
+      console.log(isidententicalproduct( product1,product1));
+      console.log(isidententicalproduct( product2,product2));
+      console.log(isidententicalproduct( product1,"  "));
+      console.log(isidententicalproduct( product,product));
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array </title>
+</head>
+<body>
+
+
+
+    <script>
+
+   let number =[ 1,2,3,3,5,67]; // array declartion
+   
+   console.log(number);
+   console.log(number[1]); // array is access by using index
+   console.log(number[3]); 
+   console.log(number[5]);
+
+   let number1 =[ 1,'rehan',3,'samad',5,null ,true,4]; // array declartion
+   
+   console.log(number1);
+   console.log(number1[2]); // array is access by using index
+   console.log(number1[4]); 
+   console.log(number1[6]);
+   
+   let number3 =5;
+  
+   console.log(Array.isArray(number)); /// array properties 1 ans true if its is array
+
+   console.log(Array.isArray(number3));
+   
+  
+   console.log(number.length); // its define no of element in array properties 2
+   
+
+   // below is push and pop prperty of array
+   let arr=[1,2,3]
+  console.log(arr);
+  arr.push(8);
+  console.log(arr);
+  arr.push(5);
+  console.log(arr);
+
+
+  console.log('popped' + arr.pop());
+  console.log(arr);
+   
+
+  // below is shift and unshift prperty of array
+  let arr1=[1,2,3]
+  console.log(arr1);
+  arr.shift(8);
+  console.log(arr1);
+  arr.shift(5);
+  console.log(arr1);
+
+
+  console.log('popped' + arr1.unshift());
+  
+
+  console.log(arr1);
+
+
+
+  // below is splice prperty of array
+  let arr2=[1,2,3,4,6,7];
+  console.log(arr2);
+  arr.splice(1,2) // delect from first index and delect 2 element
+  console.log(arr2s);
+  
+
+  // below is tostring prperty of array
+  let arr3=[1,2,3,4,6,7];
+  console.log(arr3);
+  console.log(arr3.toString) // check elemnt in string form
+  console.log(arr3);
+  
+  
+   // below is sort and valueof oprperty of array
+  let arr4=[1,2,3,4,2,7,2,8,3];
+  arr.sort();
+  console.log(arr4);
+  
+   arr.valueof();
+   console.log(arr4);
+
+  // below is refference and de-struction pr0perty of array
+   let arr5=[1,2,3,4,6,7];
+  console.log(arr5);
+  arr[0]= 99;
+  console.log(arr5);
+
+
+   let [a,b,c,f] = arr5; // a= o index or b = 2index simmilary all
+   console.log(a +" " + b + " " + c+ " " +d);
+
+
+
+    </script>
+    
+</body>
+</html>
